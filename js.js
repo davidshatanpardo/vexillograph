@@ -457,9 +457,9 @@ function generate() {
     if (values[0]>=6 && values[0]<8 && values[6]<3) {
         layer1 = 'l1_6';
         //DIVIDERS
-        if (values[6]<=-2) {
+        /*if (values[6]<=-2) {
             layer2 = 'l2_1';
-        }
+        }*/
     }
     
     //TWO TRIANGLE NW SE
@@ -476,9 +476,9 @@ function generate() {
     if (values[0]>=6 && values[0]<8 && values[6]>=3) {
         layer1 = 'l1_9';
         //DIVIDERS
-        if (values[6]>=3 && values[6]<4) {
+        /*if (values[6]>=3 && values[6]<4) {
             layer2 = 'l2_2';
-        }
+        }*/
     }
     
     //TWO STRIPES UNEVEN 1
