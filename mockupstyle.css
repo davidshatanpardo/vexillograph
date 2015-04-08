@@ -32,6 +32,19 @@ body {
     }
 }
 
+.forwardbutton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#arrow2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
 
 .page {
     width: 100%;

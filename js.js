@@ -1451,38 +1451,38 @@ function generate() {
     }
     
     if (values[7]<=-1){
-        light1 = light1 + (values[3]*3) + (values[7]*3);
+        light1 = light1 + (values[3]*3) + (values[7]*3) - 10;
         console.log(light1);
-        sat1 = sat1 + (values[5]*3) + (values[7]*3);
+        sat1 = sat1 + (values[5]*3) + (values[7]*3) + 10;
         console.log(sat1);
 
-        light2 = light2 + (values[3]*3) + (values[7]*3);
+        light2 = light2 + (values[3]*3) + (values[7]*3) - 10;
         console.log(light2);
-        sat2 = sat2 + (values[5]*3) + (values[7]*3);
+        sat2 = sat2 + (values[5]*3) + (values[7]*3) + 10;
         console.log(sat2);
 
-        light3 = light3 + (values[3]*3) + (values[7]*3);
+        light3 = light3 + (values[3]*3) + (values[7]*3) - 10;
         console.log(light3);
-        sat3 = sat3 + (values[5]*3) + (values[7]*3);
+        sat3 = sat3 + (values[5]*3) + (values[7]*3) + 10;
         console.log(sat3);
 
-        light4 = light4 + (values[3]*3) + (values[7]*3);
+        light4 = light4 + (values[3]*3) + (values[7]*3) - 10;
         console.log(light4);
-        sat4 = sat4 + (values[5]*3) + (values[7]*3);
+        sat4 = sat4 + (values[5]*3) + (values[7]*3) + 10;
         console.log(sat4);
     }
     
     if (values[7]>=0){
-        sat1 = sat1 + (values[5]*3) + (values[7]*3);
+        sat1 = sat1 + (values[5]*4) + (values[7]*3 + 15);
         console.log(sat1);
 
-        sat2 = sat2 + (values[5]*3) + (values[7]*3);
+        sat2 = sat2 + (values[5]*4) + (values[7]*3) + 15;
         console.log(sat2);
 
-        sat3 = sat3 + (values[5]*3) + (values[7]*3);
+        sat3 = sat3 + (values[5]*4) + (values[7]*3) + 15;
         console.log(sat3);
 
-        sat4 = sat4 + (values[5]*3) + (values[7]*3);
+        sat4 = sat4 + (values[5]*4) + (values[7]*3) + 15;
         console.log(sat4);
     }
     
