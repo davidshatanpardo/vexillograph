@@ -130,7 +130,7 @@ textarea:focus{
 #navbar {
     position: fixed;
     left: 20px;
-    top: 250px;
+    top: 20px;
     width: 70px;
     z-index: 10;
 }
