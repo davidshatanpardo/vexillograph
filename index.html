@@ -1,11 +1,968 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hello World!</title>
-</head>
-<body>
-	hellow worldkjhkjlh
+	
+   <head>
+     <meta charset="utf-8">
+     <title>VEXILLOGRAPH</title>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="mockupstyle.css">
+     <link rel="stylesheet" type="text/css" href="checkstyle.css">
+     <script src="js.js" type="text/javascript"></script>
+     <!--<link rel="stylesheet" type="text/css" href="css.css">-->
+      
+     <!--ANIMATE SCROLL-->
+    
+    <script src="jquery.localscroll-1.2.7-min.js" type="text/javascript"></script> 
+    <script src="jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.14/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#navbar').localScroll({duration:800});
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.backbar').localScroll({duration:800});
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#navbar').localScroll({duration:800});
+        });
+    </script>
+    
+    <!--SNAP SCROLL-->
+    <!--
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {$("#main").onepage_scroll({
+    sectionContainer: "section",        // sectionContainer accepts any kind of selector in case you don't want to use section
+    easing: "ease",                     // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+                                        // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+    animationTime: 800,                 // AnimationTime let you define how long each section takes to animate
+    pagination: false,                  // You can either show or hide the pagination. Toggle true for show, false for hide.
+    updateURL: false,                   // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+    beforeMove: function(index) {},     // This option accepts a callback function. The function will be called before the page moves.
+    afterMove: function(index) {},      // This option accepts a callback function. The function will be called after the page moves.
+    loop: false,                        // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+    keyboard: true,                     // You can activate the keyboard controls
+    responsiveFallback: false           // You can fallback to normal page scroll by defining the width of the browser in which
+                                        // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+                                        // the browser's width is less than 600, the fallback will kick in.
+    });
+    });
+    </script>
+       -->
+   </head>
+    
+   <body>
+     
+     <div id="backvalues"></div>
+<!--NAVIGATION-->     
+     <div id="navbar">
+         <a class="navbutton" id="nav0" href="#p0">0</a>
+         <a class="navbutton" id="nav1" href="#p1">1</a>
+         <a class="navbutton" id="nav2" href="#p2">2</a>
+         <a class="navbutton" id="nav3" href="#p3">3</a>
+         <a class="navbutton" id="nav4" href="#p4">4</a>
+         <!--<button class="navbutton done" id="finished" onclick="generate()">done</button>-->
+         <!--<a class="navbutton" id="navflag">done</a>-->
+         <a class="navbutton" id="finished" href="#final" onclick="generate()">done</a>
+         <a class="navbutton" id="navi" href="#info">i</a>
+     </div>
+     
+    
+     <div id="main">
+<!--INTRO--> 
+     <section class="page" id="p0">
+      <div class="card" id="card0">
+         <div class="qbox" id="q0">
+             <p class="introtitle">VEXILLOGRAPH 01</p>
+             <svg width="1160" height="100">
+                 <line x1="150" y1="50" x2="1010" y2="50" stroke-width="20" stroke="#88827c"/>
+             </svg>
+             <p id="introp">
+                 choose a place, any place.
+                 now answer these questions as best you can.
+                 be completely subjective.
+                 answer them as only you would.
+                 the resulting flag will represent this place as it exists in your mind.
+                 a personalized flag for your experience of a space.
+             </p>
+         </div>
+      </div>
+     </section>
+     
+<!--CARD 1-->     
+     <section class="page" id="p1">
+      <div class="card" id="card1">
+         <div class="qbox" id="q1a"></div>
+         
+         <div class="qbox" id="q1b">
+            <div id="1circle">
+            <br><br><span class="number">1</span><br>
+             <span class="title">basic basics</span>
+             </div>
+         </div>
+         
+         <div class="qbox" id="q1c"></div>
+         
+         <div class="qbox" id="q1d">
+            <span class="question"></span>
+            <form action="demo_form.asp">
+            </form>
+         </div>
+         
+         <div class="qbox" id="q1e"></div>
+         
+         <div class="qbox" id="q1f"></div>
+         
+         <div class="qbox" id="q1g">
+            <!--<button id="finished" onclick="generate()">Finish!</button>
+            <p id="values"></p>-->
+         </div>
+         
+         <svg width="384" height="384" id="circle1">
+              <circle cx="192" cy="192" r="192" stroke="#ef7e69" stroke-width="20" fill="none" />
+              <line x1="98" y1="300" x2="286" y2="300" style="stroke:#ef7e69; stroke-width:20" />
+         </svg>
+         
+         <svg height="72" width="448" id="zigzag1">
+              <polyline points="0,72 50,0 100,72 150,0 200,72 250,0 300,72 350,0 400,72 450,0 "
+              style="fill:none;stroke:#ef7e69;stroke-width:20" />
+         </svg>
+         
+         <svg height="416" width="384" id="bottompattern1">
+                <line x1="0" y1="416" x2="384" y2="0" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="320" y1="70" x2="384" y2="70" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="256" y1="140" x2="384" y2="140" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="0" y1="210" x2="384" y2="210" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="128" y1="280" x2="384" y2="280" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="64" y1="350" x2="384" y2="350" style="stroke:#ef7e69; stroke-width:20;"/>
+                <line x1="192" y1="0" x2="192" y2="208" style="stroke:#ef7e69; stroke-width:20;"/>
+         </svg>  
+      </div>
+      </section>
+      
+<!--CARD 2-->      
+      <section class="page" id="p2">
+      <div class="card" id="card2">
+          <div class="qbox" id="q2a"></div>
+          
+          <div class="qbox" id="q2b"></div>
+          
+          <div class="qbox" id="q2c">
+              <br><br><br><span class="number">2</span><br>
+             <span class="title">geography</span>
+          </div>
+          
+          <svg height="400" width="276" id="pattern2c">
+              <line x1="67" y1="60" x2="209" y2="60" style="stroke:#ffdb45; stroke-width:20;"/> 
+              <line x1="67" y1="350" x2="209" y2="350" style="stroke:#ffdb45; stroke-width:20;"/>
+          </svg>
+          
+          <div class="qbox" id="q2d"></div>
+          
+          <svg height="400" width="556" id="pattern2d">
+              <polygon points="0,200 278,0 556,200 278,400" style="fill:none;stroke:#ffdb45;stroke-width:20" />
+              <circle cx="278" cy="200" r="107" stroke="#ffdb45" stroke-width="20" fill="none" />
+          </svg>
+          
+          <div class="qbox" id="q2e"></div>
+          
+      </div>
+      </section>
+      
+<!--CARD 3-->      
+      <section class="page" id="p3">
+      <div class="card" id="card3">
+          <div class="qbox" id="q3a">
+              <br><br><span class="title">&nbsp;</span><span class="number">3</span>
+             <span class="title">&nbsp;form &amp; function</span>
+          </div>
+          
+          <svg height="237" width="276" id="pattern3a">
+              <line x1="157" y1="76" x2="299" y2="76" style="stroke:#5dedb0; stroke-width:20;"/> 
+          </svg>
+          
+          <div class="qbox" id="q3b"></div>
+          
+          <div class="qbox" id="q3c"></div>
+          
+          <div class="qbox" id="q3d"></div>
+          
+          <svg height="322" width="244" id="pattern3d">
+                <polygon fill="none" stroke="#5dedb0" stroke-width="20" points="45,121.7 122,77 199,121.7 
+	                199,211.2 122,256 45,211.2 "/>
+                <!--<rect x="22.1" y="18.2" fill="none" stroke="#5dedb0" stroke-width="15" width="244" height="321.3"/>-->
+                <line fill="none" stroke="#5dedb0" stroke-width="20" x1="122" y1="246" x2="122" y2="322"/>
+                <line fill="none" stroke="#5dedb0" stroke-width="20" x1="122" y1="77" x2="122" y2="0"/>
+          </svg>
+          
+          <div class="qbox" id="q3e"></div>
+          
+          <div class="qbox" id="q3f"></div>
+          
+          <svg height="800" width="230" id="pattern3f">
+              <path fill="none" stroke="#5dedb0" stroke-width="20" d="M114.5-243c0,36.4-50,36.4-50,72.7
+	c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7
+	c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7s-50,36.4-50,72.7"/>
+<path fill="none" stroke="#5dedb0" stroke-width="20" d="M179.5-243c0,36.4-50,36.4-50,72.7
+	c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7
+	c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7s-50,36.4-50,72.7"/>
+<path fill="none" stroke="#5dedb0" stroke-width="20" d="M244.5-243c0,36.4-50,36.4-50,72.7
+	c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7
+	c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7c0,36.4-50,36.4-50,72.7c0,36.4,50,36.4,50,72.7s-50,36.4-50,72.7"/>
+          </svg>
+          
+      </div>
+      </section>
+      
+<!--CARD 4-->
+      <section class="page" id="p4">
+      <div class="card" id="card4">
+          <div class="qbox" id="q4a">
+              <br><br><br><span class="number">4</span><br>
+             <span class="question">personal<br>relationship</span>
+          </div>
+          
+          <svg height="440" width="292" id="pattern4a">
+              <line x1="75" y1="60" x2="217" y2="60" style="stroke:#48d0e2; stroke-width:20;"/> 
+              <line x1="75" y1="380" x2="217" y2="380" style="stroke:#48d0e2; stroke-width:20;"/>
+          </svg>
+          
+          <div class="qbox" id="q4b"></div>
+          
+          <div class="qbox" id="q4c"></div>
+          
+          <div class="qbox" id="q4d"></div>
+          
+          <div class="qbox" id="q4e"></div>
+          
+          <div class="qbox" id="q4f"></div>
+          
+          <svg height="360" width="135" id="pattern4f">
+              <polygon points="67.5,35 102.5,70 67.5,105 32.5,70" style="fill:none;stroke:#48d0e2;stroke-width:20"/>
+              <polygon points="67.5,145 102.5,180 67.5,215 32.5,180" style="fill:none;stroke:#48d0e2;stroke-width:20"/>
+              <polygon points="67.5,255 102.5,290 67.5,325 32.5,290" style="fill:none;stroke:#48d0e2;stroke-width:20"/>
+          </svg>
+          
+          <div class="qbox" id="q4g">
+              <span class="question">a few words about this place</span><br>
+              <textarea name="bio" rows="10" cols="30"></textarea>
+              <svg width="651" height="360px" id="pattern4g">
+                  <line x1="45" y1="130" x2="621" y2="130" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="160" x2="621" y2="160" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="190" x2="621" y2="190" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="220" x2="621" y2="220" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="250" x2="621" y2="250" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="280" x2="621" y2="280" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="310" x2="621" y2="310" stroke="#48d0e2" stroke-width="3"/>
+                  <line x1="45" y1="340" x2="621" y2="340" stroke="#48d0e2" stroke-width="3"/>
+              </svg>
+          </div>
+      </div>
+      </section>
+      
+      <section class="page" id="final">
+          <div id="flag">
+             <!--LAYER 1-->
+             <!--LAYER 1-->
+             <svg height="600" width="900" class="layer1" id="l1_1">
+                 <rect x="0" y="0" width="900" height="600" fill="green" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_2">
+                 <rect x="0" y="0" width="900" height="300" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="0" y="300" width="900" height="300" fill="blue" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_3">
+                 <rect x="0" y="0" width="900" height="200" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="0" y="200" width="900" height="200" fill="blue" stroke="black" stroke-width="0"/>
+                 <rect x="0" y="400" width="900" height="200" style="fill:yellow; stroke-width:0; stroke:rgb(0,0,0)"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_4">
+                 <rect x="0" y="0" width="450" height="600" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="450" y="0" width="450" height="600" fill="blue" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_5">
+                 <rect x="0" y="0" width="300" height="600" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="300" y="0" width="300" height="600" fill="blue" stroke="black" stroke-width="0"/>
+                 <rect x="600" y="0" width="300" height="600" fill="yellow" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_6">
+                 <rect x="0" y="0" width="450" height="300" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="450" y="0" width="450" height="300" fill="blue" stroke="black" stroke-width="0"/>
+                 <rect x="0" y="300" width="450" height="300" fill="yellow" stroke="black" stroke-width="0"/>
+                 <rect x="450" y="300" width="450" height="300" fill="red" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_7">
+                 <polygon points="0,0 900,600 0,600" fill="blue" stroke="black" stroke-width="0"/>
+                 <polygon points="0,0 900,0 900,600" fill="green" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_8">
+                 <polygon points="0,0 900,0 0,600" fill="blue" stroke="black" stroke-width="0"/>
+                 <polygon points="900,600 0,600 900,0" fill="green" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_9">
+                 <polygon points="0,0 900,0 450,300" fill="blue" stroke="black" stroke-width="0"/>
+                 <polygon points="900,0 900,600 450,300" fill="green" stroke="black" stroke-width="0"/>
+                 <polygon points="900,600 0,600 450,300" fill="yellow" stroke="black" stroke-width="0"/>
+                 <polygon points="0,0 0,600 450,300" fill="red" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_10">
+                 <rect x="0" y="0" width="600" height="600" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="600" y="0" width="300" height="600" fill="blue" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_11">
+                 <rect x="0" y="0" width="300" height="600" fill="green" stroke="black" stroke-width="0"/>
+                 <rect x="300" y="0" width="600" height="600" fill="blue" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg height="600" width="900" class="layer1" id="l1_12">
+                 <polygon points="0,300 450,0 900,300 450,600" fill="cyan" stroke="black" stroke-width="0"/>
+                 <polygon points="0,0 450,0 0,300" fill="yellow" stroke="black" stroke-width="0"/>
+                 <polygon points="450,0 900,0 900,300" fill="red" stroke="black" stroke-width="0"/>
+                 <polygon points="900,300 900,600 450,600" fill="blue" stroke="black" stroke-width="0"/>
+                 <polygon points="450,600 0,600 0,300" fill="green" stroke="black" stroke-width="0"/>
+             </svg>
+             
+             <svg width="900" height="600" class="layer1" id="l1_13">
+                <path fill="magenta" stroke="black" stroke-width="0" d="M150,300C150,134.3,284.3,0,450,0H0v600h450
+	                C284.3,600,150,465.7,150,300z"/>
+                <path fill="aqua" stroke="black" stroke-width="0" d="M450,0c165.7,0,300,134.3,300,300
+                    S615.7,600,450,600h450V0H450z"/>
+                <circle fill="magenta" stroke="black" stroke-width="0" cx="450" cy="300" r="300"/>
+            </svg>
+             
+            <svg width="900" height="600" class="layer1" id="l1_14">
+                <path fill="magenta" stroke="black" stroke-width="0" d="M0,0v600h900C402.5,600,0,331.6,0,0z"/>
+                <path fill="aqua" stroke="black" stroke-width="0" d="M0,0c0,331.6,402.5,600,900,600V0H0z"/>
+            </svg> 
+             
+            <svg width="900" height="600" class="layer1" id="l1_15">
+                <path fill="aqua" stroke="black" stroke-width="0" d="M900,600V0L0,0C497.5,0,900,268.4,900,600z"/>
+                <path fill="magenta" stroke="black" stroke-width="0" d="M900,600C900,268.4,497.5,0,0,0l0,600H900z"/>
+            </svg>  
+             
+            <svg width="900" height="600" class="layer1" id="l1_16">
+                <path fill="magenta" stroke="black" stroke-width="0" d="M450,0H0v300C248.7,300,450,165.8,450,0z"/>
+                <path fill="cyan" stroke="black" stroke-width="0" d="M450,0c0,165.8,201.3,300,450,300V0H450z"/>
+                <path fill="yellow" stroke="black" stroke-width="0" d="M0,300v300h450C450,434.2,248.7,300,0,300z"/>
+                <path fill="orange" stroke="black" stroke-width="0" d="M450,600h450V300C651.3,300,450,434.2,450,600z"/>
+                <path fill="pink" stroke="black" stroke-width="0" d="M450,0c0,165.8-201.3,300-450,300 c248.7,0,450,134.2,450,300c0-165.8,201.3-300,450-300C651.3,300,450,165.8,450,0z"/>
+            </svg> 
+            
+            <!--LAYER 2-->
+            <!--LAYER 2-->
 
-</body>
+            <svg width="900" height="600" class="layer2" id="l2_1">
+                <line stroke="black" stroke-width="20" x1="450" y1="0" x2="450" y2="600"/>
+                <line stroke="black" stroke-width="20" x1="0" y1="300" x2="900" y2="300"/>
+            </svg>
+             
+            <svg width="900" height="600" class="layer2" id="l2_2">
+                <line stroke="black" stroke-width="20" x1="0" y1="0" x2="900" y2="600"/>
+                <line stroke="black" stroke-width="20" x1="0" y1="600" x2="900" y2="0"/>
+            </svg>
+            
+             
+            <!--LAYER 3-->
+            <!--LAYER 3--> 
+             
+            <svg width="900" height="600" class="layer3" id="l3_1">
+                <rect x="0" y="0" width="450" height="300" fill="green" stroke="black" stroke-width="0"/>
+            </svg>
+             
+            <svg width="900" height="600" class="layer3" id="l3_2">
+                <rect x="0" y="300" width="450" height="300" fill="green" stroke="black" stroke-width="0"/>
+            </svg>    
+             
+            <svg width="900" height="600" class="layer3" id="l3_3">
+                <rect x="450" y="300" width="450" height="300" fill="green" stroke="black" stroke-width="0"/>
+            </svg>   
+             
+            <svg width="900" height="600" class="layer3" id="l3_4">
+                <rect x="450" y="0" width="450" height="300" fill="green" stroke="black" stroke-width="0"/>
+            </svg> 
+                  
+            <svg width="900" height="600" class="layer3" id="l3_5">
+                <polygon fill="red" stroke="black" stroke-width="0" points="100,300 450,66.7 800,300 450,533.3 "/>
+            </svg>  
+              
+            <svg width="900" height="600" class="layer3" id="l3_6">
+                <circle fill="red" stroke="black" stroke-width="0" cx="450" cy="300" r="250"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer3" id="l3_7">  
+                <polygon fill="red" stroke="black" stroke-width="0" points="450,50 666.5,175 666.5,425 450,550 233.5,425 233.5,175 "/>   
+            </svg>
+            
+            <svg width="900" height="600" class="layer3" id="l3_8">
+                <polygon fill="red" stroke="black" stroke-width="0" points="450,50 700,300 450,550 200,300"/>
+            </svg>
+    
+            <svg width="900" height="600" class="layer3" id="l3_9">
+                <polygon fill="red" stroke="black" stroke-width="0" points="161.3,550 450,50 738.7,550 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer3" id="l3_10">   
+                <polygon fill="red" stroke="black" stroke-width="0" points="738.7,50 450,550 161.3,50 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer3" id="l3_11">   
+                <polygon fill="red" stroke="black" stroke-width="0" points="0,0 450,300 0,600 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer3" id="l3_12">   
+                <polygon fill="red" stroke="black" stroke-width="0" points="900,0 450,300 900,600 "/>
+            </svg>
+            
+            <!--LAYER 4-->
+            <!--LAYER 4-->
+            
+            <svg width="900" height="600" class="layer4" id="l4_1">
+                <circle fill="pink" stroke="black" stroke-width="0" cx="450" cy="300" r="150"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_2">
+                <rect  x="300" y="150" width="300" height="300" fill="pink" stroke="black" stroke-width="0"/>
+            </svg>
 
+            <svg width="900" height="600" class="layer4" id="l4_3">   
+                <polygon fill="pink" stroke="black" stroke-width="0" points="450,150 579.9,225 579.9,375 450,450 320.1,375 320.1,225 "/>         
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_4">   
+                <polygon fill="pink" stroke="black" stroke-width="0" points="450,150 600,300 450,450 300,300"/>         
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_5">   
+                <polygon fill="pink" stroke="black" stroke-width="0" points="450,150 550,300 450,450 350,300"/>         
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_6">
+                <polygon fill="pink" stroke="black" stroke-width="0" points="276.8,450 450,150 623.2,450 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_7">
+                <polygon fill="pink" stroke="black" stroke-width="0" points="623.2,150 450,450 276.8,150 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer4" id="l4_8">
+                <polygon fill="pink" stroke="black" stroke-width="0" points="675,300 450,150 225,300 450,450 "/>
+            </svg>
+            
+            <!--LAYER 5-->
+            <!--LAYER 5-->
+            
+            <svg width="900" height="600" class="layer5" id="l5_1">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="112.5,150 225,75 337.5,150 225,225"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_2">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="112.5,450 225,375 337.5,450 225,525"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_3">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="562.5,450 675,375 787.5,450 675,525"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_4">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="562.5,150 675,75 787.5,150 675,225"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_5">
+                <circle cx="225" cy="150" r="75" fill="cyan" stroke="black" stroke-width="0"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_6">
+                <circle cx="225" cy="450" r="75" fill="cyan" stroke="black" stroke-width="0"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_7">
+                <circle cx="675" cy="450" r="75" fill="cyan" stroke="black" stroke-width="0"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_8">
+                <circle cx="675" cy="150" r="75" fill="cyan" stroke="black" stroke-width="0"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_9">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="225,75 290,112.5 290,187.5 225,225 160,187.5 160,112.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_10">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="675,75 740,112.5 740,187.5 675,225 610,187.5 610,112.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_11">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="225,375 290,412.5 290,487.5 225,525 160,487.5 160,412.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_12">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="675,375 740,412.5 740,487.5 675,525 610,487.5 610,412.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_13">
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="225" cy="150" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="365" cy="150" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="85" cy="150" r="35"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_14">
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="225" cy="450" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="365" cy="450" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="85" cy="450" r="35"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_15">
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="675" cy="450" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="815" cy="450" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="535" cy="450" r="35"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_16">
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="675" cy="150" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="815" cy="150" r="35"/>
+                <circle fill="cyan" stroke="black" stroke-width="0" cx="535" cy="150" r="35"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_17">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="184.6,185 225,115 265.4,185 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="324.6,185 365,115 405.4,185 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="44.6,185 85,115 125.4,185 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_18">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="184.6,485 225,415 265.4,485 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="324.6,485 365,415 405.4,485 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="44.6,485 85,415 125.4,485 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_19">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="634.6,485 675,415 715.4,485 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="774.6,485 815,415 855.4,485 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="494.6,485 535,415 575.4,485 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer5" id="l5_20">
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="634.6,185 675,115 715.4,185 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="774.6,185 815,115 855.4,185 "/>
+                <polygon fill="cyan" stroke="black" stroke-width="0" points="494.6,185 535,115 575.4,185 "/>
+            </svg>
+            
+            <!--LAYER 6-->
+            <!--LAYER 6-->
+            
+            <svg width="900" height="600" class="layer6" id="l6_1">
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,120c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,45c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,195c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_2">
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,420c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,345c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M0,495c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60s37.5-60,75-60"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_3">
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,420c37.5,0,37.5,60,75,60
+	c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,345c37.5,0,37.5,60,75,60
+	c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,495c37.5,0,37.5,60,75,60
+	c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_4">
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,120c37.5,0,37.5,60,75,60
+	c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,45c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60
+	c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+                <path fill="none" stroke="hsl(210, 85%, 62%)" stroke-width="17" d="M450,195c37.5,0,37.5,60,75,60
+	c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60c37.5,0,37.5,60,75,60c37.5,0,37.5-60,75-60"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_5">
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,45 75,105 
+	150,45 225,105 300,45 375,105 450,45 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,120 75,180 
+	150,120 225,180 300,120 375,180 450,120 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,195 75,255 
+	150,195 225,255 300,195 375,255 450,195 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_6">
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,345 75,405 
+	150,345 225,405 300,345 375,405 450,345 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,420 75,480 
+	150,420 225,480 300,420 375,480 450,420 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="0,495 75,555 
+	150,495 225,555 300,495 375,555 450,495 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_7">
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,345 525,405 
+	600,345 675,405 750,345 825,405 900,345 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,420 525,480 
+	600,420 675,480 750,420 825,480 900,420 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,495 525,555 
+	600,495 675,555 750,495 825,555 900,495 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_8">
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,45 525,105 
+	600,45 675,105 750,45 825,105 900,45 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,120 525,180 
+	600,120 675,180 750,120 825,180 900,120 "/>
+                <polyline fill="none" stroke="hsl(41, 39%, 42%)" stroke-width="17" stroke-linecap="square" points="450,195 525,255 
+	600,195 675,255 750,195 825,255 900,195 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_9">
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="150" r="19"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_10">
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="54" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="139.5" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="225" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="310.5" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="396" cy="450" r="19"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_11">
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="355" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="545" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="450" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="450" r="19"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_12">
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="55" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="245" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="504" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="589.5" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="675" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="760.5" cy="150" r="19"/>
+                <circle fill="hsl(0, 0%, 100%)" stroke="black" stroke-width="0" cx="846" cy="150" r="19"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_13">
+                <rect x="35" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="35" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="35" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_14">
+                <rect x="35" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="35" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="35" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="120.5" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="206" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="291.5" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="377" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_15">
+                <rect x="485" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="336" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="485" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="431" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="485" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="526" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_16">
+                <rect x="485" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="36" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="485" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="131" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="485" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="570.5" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="656" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="741.5" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+                <rect x="827" y="226" fill="hsl(0, 0%, 60%)" stroke="black" stroke-width="0" width="38" height="38"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_17">
+                <rect x="47.3" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -24.1783 63.8982)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.7531 120.4516)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 22.6721 177.005)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 46.0973 233.5584)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 69.5224 290.1118)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="47.3" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -87.0154 89.9262)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -63.5902 146.4796)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.1651 203.033)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.7399 259.5864)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6.6853 316.1398)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="47.3" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -149.8526 115.9542)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -126.4274 172.5076)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -103.0022 229.061)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -79.577 285.6144)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -56.1518 342.1678)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_18">
+                <rect x="47.3" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -236.3103 151.7662)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -212.8851 208.3196)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -189.46 264.873)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -166.0348 321.4264)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -142.6096 377.9798)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="47.3" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -299.1475 177.7942)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -275.7223 234.3476)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.2971 290.901)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -228.8719 347.4544)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -205.4467 404.0078)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="47.3" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -361.9846 203.8221)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="127.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -338.5594 260.3755)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="207.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -315.1342 316.929)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="287.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -291.709 373.4824)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="367.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -268.2838 430.0358)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_19">
+                <rect x="497.3" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -104.5084 469.9642)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -81.0832 526.5176)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -57.658 583.071)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -34.2328 639.6245)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="343.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -10.8076 696.1779)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="497.3" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -167.3455 495.9922)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -143.9203 552.5457)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -120.4951 609.0991)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -97.0699 665.6525)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="432.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -73.6447 722.2059)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="497.3" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -230.1826 522.0202)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -206.7574 578.5736)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -183.3322 635.127)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -159.9071 691.6804)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="521.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -136.4819 748.2339)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_20">
+                <rect x="497.3" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 107.6236 382.0963)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 131.0488 438.6497)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 154.474 495.2031)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 177.8992 551.7565)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="43.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 201.3244 608.3099)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="497.3" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 44.7865 408.1242)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 68.2117 464.6777)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 91.6369 521.2311)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 115.0621 577.7845)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="132.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 138.4873 634.3379)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="497.3" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.0506 434.1522)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="577.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 5.3746 490.7057)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="657.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 28.7998 547.2591)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="737.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 52.225 603.8124)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+                <rect x="817.2" y="221.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 75.6502 660.3659)" fill="hsl(50, 80%, 50%)" stroke="black" stroke-width="0" width="35.5" height="35.5"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_21">
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,172.6 63.2,130 95.8,172.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,172.6 323.7,130 356.3,172.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,172.6 193.5,130 226,172.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="356.3,126.2 388.9,83.6 421.5,126.2 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="226.1,126.2 258.6,83.6 291.2,126.2 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="95.8,126.2 128.4,83.6 160.9,126.2 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,265.3 63.2,222.7 95.8,265.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="356.3,218.9 388.9,176.4 421.5,218.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="226.1,218.9 258.6,176.4 291.2,218.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="95.8,218.9 128.4,176.4 160.9,218.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,79.8 63.2,37.3 95.8,79.8 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,79.8 323.7,37.3 356.3,79.8 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,79.8 193.5,37.3 226,79.8 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,265.3 323.7,222.7 356.3,265.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,265.3 193.5,222.7 226,265.3 "/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_22">
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,471.3 63.2,428.7 95.8,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,471.3 323.7,428.7 356.3,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,471.3 193.5,428.7 226,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="356.3,424.9 388.9,382.4 421.5,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="226.1,424.9 258.6,382.4 291.2,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="95.8,424.9 128.4,382.4 160.9,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,564 63.2,521.4 95.8,564 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="356.3,517.6 388.9,475.1 421.5,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="226.1,517.6 258.6,475.1 291.2,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="95.8,517.6 128.4,475.1 160.9,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="30.7,378.6 63.2,336 95.8,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,378.6 323.7,336 356.3,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,378.6 193.5,336 226,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="291.2,564 323.7,521.4 356.3,564 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="160.9,564 193.5,521.4 226,564 "/>  
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_23">
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,471.3 512.2,428.7 544.7,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,471.3 772.7,428.7 805.2,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,471.3 642.4,428.7 675,471.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="805.2,424.9 837.8,382.4 870.4,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="675,424.9 707.6,382.4 740.1,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="544.7,424.9 577.3,382.4 609.9,424.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,564 512.2,521.4 544.7,564 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="805.2,517.6 837.8,475.1 870.4,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="675,517.6 707.6,475.1 740.1,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="544.7,517.6 577.3,475.1 609.9,517.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,378.6 512.2,336 544.7,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,378.6 772.7,336 805.2,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,378.6 642.4,336 675,378.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,564 772.7,521.4 805.2,564 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,564 642.4,521.4 675,564 "/> 
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_24">
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,171.3 512.2,128.7 544.7,171.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,171.3 772.7,128.7 805.2,171.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,171.3 642.4,128.7 675,171.3 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="805.2,124.9 837.8,82.4 870.4,124.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="675,124.9 707.6,82.4 740.1,124.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="544.7,124.9 577.3,82.4 609.9,124.9 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,264 512.2,221.4 544.7,264 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="805.2,217.6 837.8,175.1 870.4,217.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="675,217.6 707.6,175.1 740.1,217.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="544.7,217.6 577.3,175.1 609.9,217.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="479.6,78.6 512.2,36 544.7,78.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,78.6 772.7,36 805.2,78.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,78.6 642.4,36 675,78.6 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="740.1,264 772.7,221.4 805.2,264 "/>
+                <polyline fill="none" stroke="hsl(106, 35%, 51%)" stroke-width="17" points="609.9,264 642.4,221.4 675,264 "/>  
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_25">
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="75" x2="450" y2="75"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="0" x2="450" y2="0"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="150" x2="450" y2="150"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="225" x2="450" y2="225"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="300" x2="450" y2="300"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_26">
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="375" x2="450" y2="375"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="300" x2="450" y2="300"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="450" x2="450" y2="450"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="525" x2="450" y2="525"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="0" y1="600" x2="450" y2="600"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_27">
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="375" x2="900" y2="375"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="300" x2="900" y2="300"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="450" x2="900" y2="450"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="525" x2="900" y2="525"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="600" x2="900" y2="600"/>
+            </svg>
+            
+            <svg width="900" height="600" class="layer6" id="l6_28">
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="75" x2="900" y2="75"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="0" x2="900" y2="0"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="150" x2="900" y2="150"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="225" x2="900" y2="225"/>
+                <line fill="none" stroke="hsl(85, 70%, 63%)" stroke-width="17" x1="450" y1="300" x2="900" y2="300"/>
+            </svg>
+            
+            
+          </div>
+      </section>
+       </div>
+   </body>
+    
 </html>
