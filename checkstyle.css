@@ -1,0 +1,124 @@
+.regular-radio  {
+	-webkit-appearance: none;
+	border: 5px solid;
+	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
+	padding: 7px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+    outline:none;
+    margin-bottom: -3px;
+}
+
+.card1.regular-radio {
+	border-color: #ef7e69;
+}
+
+.card2.regular-radio {
+	border-color: #ffdb45;
+}
+
+.card3.regular-radio {
+	border-color: #5dedb0;
+}
+
+.card4.regular-radio {
+	border-color: #48d0e2;
+}
+
+/*.regular-radio:checked:after {
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	border-radius: 50px;
+	position: absolute;
+	top: 3px;
+	background: #99a1a7;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	text-shadow: 0px;
+	left: 3px;
+	font-size: 32px;
+}*/
+
+.regular-radio:checked {
+	border: 5px solid;
+    outline:none;
+    margin-bottom: -3px;
+	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);*/
+}
+
+.card1.regular-radio:checked {
+	background-color: #ef7e69;
+	border-color: #ef7e69;
+}
+
+.card2.regular-radio:checked {
+	background-color: #ffdb45;
+	border-color: #ffdb45;
+}
+
+.card3.regular-radio:checked {
+	background-color: #5dedb0;
+	border-color: #5dedb0;
+}
+
+.card4.regular-radio:checked {
+	background-color: #48d0e2;
+	border-color: #48d0e2;
+}
+
+.regular-radio:active, .regular-radio:checked:active {
+	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);*/
+}
+
+.regular-checkbox {
+	-webkit-appearance: none;
+	border: 5px solid;
+	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
+	padding: 7px;
+	display: inline-block;
+	position: relative;
+    outline:none;
+    margin-bottom: -3px;
+}
+
+.card1.regular-checkbox {
+	border-color: #ef7e69;
+}
+
+.card2.regular-checkbox {
+	border-color: #ffdb45;
+}
+
+.card3.regular-checkbox {
+	border-color: #5dedb0;
+}
+
+.card4.regular-checkbox {
+	border-color: #48d0e2;
+}
+
+.regular-checkbox:checked {
+	border: 5px solid;
+	/*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);*/
+}
+
+.card1.regular-checkbox:checked {
+	background-color: #ef7e69;
+	border-color: #ef7e69;
+}
+
+.card2.regular-checkbox:checked {
+	background-color: #ffdb45;
+	border-color: #ffdb45;
+}
+
+.card3.regular-checkbox:checked {
+	background-color: #5dedb0;
+	border-color: #5dedb0;
+}
+
+.card4.regular-checkbox:checked {
+	background-color: #48d0e2;
+	border-color: #48d0e2;
+}
