@@ -765,7 +765,7 @@ function generate() {
             $('#l6_1').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //WAVES 4
@@ -837,7 +837,7 @@ function generate() {
             $('#l6_5').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //ZIGS 4
@@ -909,7 +909,7 @@ function generate() {
             $('#l6_9').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //DOTS 4
@@ -981,7 +981,7 @@ function generate() {
             $('#l6_13').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //SQUARES 4
@@ -1053,7 +1053,7 @@ function generate() {
             $('#l6_17').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //DIAMONDS 4
@@ -1125,7 +1125,7 @@ function generate() {
             $('#l6_21').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //CHEVRONS 4
@@ -1197,7 +1197,7 @@ function generate() {
             $('#l6_25').css('display', 'block');
             corner1 = 1;
         }
-        corner2 = 1;
+        corner3 = 1;
     }
     
     //STRIPES 4
