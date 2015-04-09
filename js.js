@@ -702,12 +702,12 @@ function generate() {
         }
 
         //MIDDLE SMALL TRIANGLE UP
-        if (values[1]>=0 && values[1]<=1) {
+        if (values[1]>=0 && values[1]<=1 && rando1==0) {
             layer4 = 'l4_6';
         }
 
         //MIDDLE SMALL TRIANGLE DOWN
-        if (values[1]>=0 && values[1]<=1) {
+        if (values[1]>=0 && values[1]<=1 && rando1==1) {
             layer4 = 'l4_7';
         }
 
