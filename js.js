@@ -658,59 +658,98 @@ function generate() {
         layer3 = 'l3_10';
     }
     
+    var sidetri = 0;
+    
     //SIDE BIG TRIANGLE LEFT
     if (values[0]>3 && values[0]<=5 && rando1==0) {
         layer3 = 'l3_11';
+        sidetri = 1;
     }
     
     //SIDE BIG TRIANGLE RIGHT
     if (values[0]>3 && values[0]<=5 && rando1==1) {
         layer3 = 'l3_12';
+        sidetri = 2;
     }
     
     //LAYER 4
     //LAYER 4
     
-    //MIDDLE SMALL CIRCLE
-    if (values[1]>=3) {
-        layer4 = 'l4_1';
+    if (sidetri == 0){
+        //MIDDLE SMALL CIRCLE
+        if (values[1]>=3) {
+            layer4 = 'l4_1';
+        }
+
+        //MIDDLE SMALL SQUARE
+        if (values[1]>=-3 && values[1]<=-1) {
+            layer4 = 'l4_2';
+        }
+
+        //MIDDLE SMALL HEXAGON
+        if (values[1]<=-3) {
+            layer4 = 'l4_3';
+        }
+
+        //MIDDLE SMALL DIAMOND SQUARE
+        if (values[1]>1 && values[1]<3) {
+            layer4 = 'l4_4';
+        }
+
+        //MIDDLE SMALL DIAMOND VERTICAL
+        if (values[1]>1 && values[1]<3) {
+            layer4 = 'l4_5';
+        }
+
+        //MIDDLE SMALL TRIANGLE UP
+        if (values[1]>=0 && values[1]<=1) {
+            layer4 = 'l4_6';
+        }
+
+        //MIDDLE SMALL TRIANGLE DOWN
+        if (values[1]>=0 && values[1]<=1) {
+            layer4 = 'l4_7';
+        }
+
+        //MIDDLE SMALL DIAMOND HORIZONTAL
+        if (values[1]>1 && values[1]<3) {
+            layer4 = 'l4_8';
+        }
     }
     
-    //MIDDLE SMALL SQUARE
-    if (values[1]>=-3 && values[1]<=-1) {
-        layer4 = 'l4_2';
+    //LEFT TRIANGLE DETAIL
+    else if (sidetri == 1){
+        if (values[1]>=3) {
+            layer5 = 'l5_21';
+        }
+        
+        else if (values[1]<3 && values[1]>=-2){
+            layer5 = 'l5_27';
+        }
+        
+        else if (values[1]<-2){
+            layer5 = 'l5_23';
+        }
+        corner1 = 1;
+        corner2 = 1;
     }
     
-    //MIDDLE SMALL HEXAGON
-    if (values[1]<=-3) {
-        layer4 = 'l4_3';
+    //RIGHT TRIANGLE DETAIL
+    else if (sidetri == 2){
+        if (values[1]>=3) {
+            layer5 = 'l5_22';
+        }
+        
+        else if (values[1]<3 && values[1]>=-2){
+            layer5 = 'l5_28';
+        }
+        
+        else if (values[1]<-2){
+            layer5 = 'l5_24';
+        }
+        corner3 = 1;
+        corner4 = 1;  
     }
-    
-    //MIDDLE SMALL DIAMOND SQUARE
-    if (values[1]>1 && values[1]<3) {
-        layer4 = 'l4_4';
-    }
-    
-    //MIDDLE SMALL DIAMOND VERTICAL
-    if (values[1]>1 && values[1]<3) {
-        layer4 = 'l4_5';
-    }
-    
-    //MIDDLE SMALL TRIANGLE UP
-    if (values[1]>=0 && values[1]<=1) {
-        layer4 = 'l4_6';
-    }
-    
-    //MIDDLE SMALL TRIANGLE DOWN
-    if (values[1]>=0 && values[1]<=1) {
-        layer4 = 'l4_7';
-    }
-    
-    //MIDDLE SMALL DIAMOND HORIZONTAL
-    if (values[1]>1 && values[1]<3) {
-        layer4 = 'l4_8';
-    }
-    
     //LAYER 6
     //LAYER 6
     
@@ -1578,7 +1617,12 @@ function generate() {
     //setAllColor(layer2, 0, sat, light);
     setAllColor(layer3, hue4, sat4, light4);
     setAllColor(layer4, hue3, sat3, light3);
-    setAllColor(layer5, hue1, sat1, light1);
+    if (sidetri > 0){
+        setAllColor(layer5, hue3, sat3, light3);
+    }
+    else{
+        setAllColor(layer5, hue1, sat1, light1);
+    }
     console.log(hue4);
     console.log(sat4);
     console.log(light4);
