@@ -1590,8 +1590,8 @@ function generate() {
             break;
             case 'l1_13':
             setColor(layer1, 0, hue1, sat1, light1);
-            setColor(layer1, 1, hue2, sat2, light2);
-            setColor(layer1, 2, hue1, sat1, light1);
+            setColor(layer1, 1, hue1, sat1, light1);
+            setColor(layer1, 2, hue2, sat2, light2);
             break;
             case 'l1_14':
             setColor(layer1, 0, hue1, sat1, light1);
