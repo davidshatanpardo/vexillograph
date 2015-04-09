@@ -82,6 +82,10 @@ body {
     float: left;
 }
 
+#p0{
+    margin-top: 0px;
+}
+
 .card {
     width: 1280px;
     height: 800px;
@@ -142,6 +146,7 @@ textarea:focus{
 .introtitle{
     font-size: 80pt;
     font-weight: 700;
+    line-height: 10px;
 }
 
 .smalltext {
@@ -272,6 +277,30 @@ textarea:focus{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+#introcorner1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#introcorner2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#introcorner3{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+#introcorner4{
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
 
 #card1 {
