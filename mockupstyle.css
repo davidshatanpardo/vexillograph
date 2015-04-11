@@ -36,8 +36,8 @@ body {
     #p2{display: none;}
     #p3{display: none;}
     #p4{display: none;}
-    #final{position: fixed; left: 0px; right: 0px; z-index: 2}
-    #flag{position: fixed; left: 0px; right: 0px; z-index: 2}
+    #final{display: block; position: fixed; left: 0px; right: 0px; z-index: 2}
+    #flag{display: block; position: fixed; left: 0px; right: 0px; z-index: 2}
 }
 
 @media screen and (max-width: 1280px){
