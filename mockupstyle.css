@@ -26,6 +26,10 @@ body {
     .card{display: none;}
     #navbar{display: none;}
     .forwardbutton{display: none;}
+    #arrow1{ display: none;}
+    #arrow2{ display: none;}
+    #arrow3{ display: none;}
+    #arrow4{ display: none;}
     #final{box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); position: fixed; left: 0; right: 0;}
 }
 
