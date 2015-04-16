@@ -25,6 +25,12 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
+            $('.backbutton').localScroll({duration:800});
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
             $('#arrow1').localScroll({duration:800});
         });
     </script>
@@ -146,7 +152,13 @@
      
 <!--CARD 1-->     
      <section class="page" id="p1">
-      <div class="card" id="card1">
+        <a class="backbutton" href="#p0">
+          <svg width="100" height="75" id="backarrow0">
+              <polyline points="20,55 50,30 80,55" stroke="#ef7e69" stroke-width="20" fill="none" />
+          </svg>
+        </a>
+        
+        <div class="card" id="card1">
          <div class="qbox" id="q1a"></div>
          
          <div class="qbox" id="q1b">
@@ -193,6 +205,7 @@
                 <line x1="192" y1="0" x2="192" y2="208" style="stroke:#ef7e69; stroke-width:20;"/>
          </svg>  
       </div>
+      
       <a class="forwardbutton" href="#p2">
           <svg width="100" height="75" id="arrow2">
               <polyline points="20,20 50,45 80,20" stroke="#ef7e69" stroke-width="20" fill="none" />
@@ -202,7 +215,13 @@
       
 <!--CARD 2-->      
       <section class="page" id="p2">
-      <div class="card" id="card2">
+      <a class="backbutton" href="#p1">
+          <svg width="100" height="75" id="backarrow1">
+              <polyline points="20,55 50,30 80,55" stroke="#ffdb45" stroke-width="20" fill="none" />
+          </svg>
+        </a>
+         
+         <div class="card" id="card2">
           <div class="qbox" id="q2a"></div>
           
           <div class="qbox" id="q2b"></div>
@@ -236,6 +255,11 @@
       
 <!--CARD 3-->      
       <section class="page" id="p3">
+      <a class="backbutton" href="#p2">
+          <svg width="100" height="75" id="backarrow2">
+              <polyline points="20,55 50,30 80,55" stroke="#5dedb0" stroke-width="20" fill="none" />
+          </svg>
+        </a>
       <div class="card" id="card3">
           <div class="qbox" id="q3a">
               <br><br><span class="title">&nbsp;</span><span class="number">3</span>
@@ -286,6 +310,11 @@
       
 <!--CARD 4-->
       <section class="page" id="p4">
+      <a class="backbutton" href="#p3">
+          <svg width="100" height="75" id="backarrow3">
+              <polyline points="20,55 50,30 80,55" stroke="#48d0e2" stroke-width="20" fill="none" />
+          </svg>
+        </a>
       <div class="card" id="card4">
           <div class="qbox" id="q4a">
               <br><br><br><span class="number">4</span><br>
