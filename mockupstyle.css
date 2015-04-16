@@ -229,6 +229,8 @@ textarea:focus{
     font-size: 13pt;
     font-weight: 500;
     appearance: none;
+    color: #9a63b1;
+    border-color: #9a63b1;
 }
 
 .done {
@@ -245,6 +247,35 @@ textarea:focus{
 }
 
 #navi {
+    border-color: #88827c;
+    color: #88827c;
+}
+
+#endbar{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 20px;
+    line-height: normal;
+    margin-top: -140px;
+}
+
+.endbutton{
+    float:left;
+    margin: 50px;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    border: 7px solid;
+    line-height: 47px;
+}
+
+#print{
+    border-color: #88827c;
+    color: #88827c;
+}
+
+#restart{
     border-color: #88827c;
     color: #88827c;
 }

@@ -25,6 +25,12 @@
     
     <script type="text/javascript">
         $(document).ready(function() {
+            $('#arrow1').localScroll({duration:800});
+        });
+    </script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
             $('#arrow2').localScroll({duration:800});
         });
     </script>
@@ -1050,6 +1056,10 @@
             </svg>
             
             
+          </div>
+          <div id="endbar">
+              <a class="endbutton" id="print" href="#final" onclick="window.print()">print</a>
+              <a class="endbutton" id="restart" href="#p0" onclick="location.reload()">restart</a>
           </div>
       </section>
        </div>
