@@ -22,7 +22,6 @@ body {
 }
 
 @media print{
-    textarea{position: fixed; left: 0px; bottom: 0px; z-index: 15;}
     .card{display: none;}
     #navbar{display: none; position: fixed; left: 0px; top: 0px; z-index: -1;}
     .forwardbutton{display: none; position: fixed; left: 0px; top: 0px; z-index: -1;}
@@ -38,6 +37,7 @@ body {
     #p4{display: none;}
     #final{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; padding: 0px; margin-top: 50px;}
     #flag{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; margin-top: 50px;}
+    textarea{display: block; position: fixed; left: 0px; bottom: 100px; z-index: 15;}
 }
 
 @media screen and (max-width: 1280px){
