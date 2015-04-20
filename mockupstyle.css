@@ -22,7 +22,7 @@ body {
 }
 
 @media print{
-    textarea{display: none; position: fixed; left: 0px; top: 0px; z-index: -1;}
+    textarea{position: fixed; left: 0px; bottom: 0px; z-index: 15;}
     .card{display: none;}
     #navbar{display: none; position: fixed; left: 0px; top: 0px; z-index: -1;}
     .forwardbutton{display: none; position: fixed; left: 0px; top: 0px; z-index: -1;}
