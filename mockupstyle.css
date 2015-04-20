@@ -34,7 +34,7 @@ body {
     #p1{display: none;}
     #p2{display: none;}
     #p3{display: none;}
-    /*#p4{display: none;}*/
+    #p4{display: none;}
     #final{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; padding: 0px; margin-top: 50px;}
     #flag{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; margin-top: 50px;}
     textarea{display: block; position: fixed; left: 0px; top: 100px; z-index: 15;}
