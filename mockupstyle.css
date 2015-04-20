@@ -38,6 +38,7 @@ body {
     #final{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; padding: 0px; margin-top: 50px;}
     #flag{display: block; position: fixed; left: 0px; top: -50px; z-index: 2; margin-top: 50px;}
     textarea{display: block; position: fixed; left: 0px; bottom: 100px; z-index: 15;}
+    #q4g{display: block; position: fixed; left: 0px; bottom: 100px; z-index: 15; border: 0px;}
 }
 
 @media screen and (max-width: 1280px){
