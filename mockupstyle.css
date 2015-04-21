@@ -213,6 +213,10 @@ textarea:focus{
     font-size: 80pt;
     font-weight: 700;
     line-height: 10px;
+    color: #88827c;
+    /*-webkit-text-fill-color: #fffcf7; /* Will override color (regardless of order) 
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #88827c;*/
 }
 
 .smalltext {
