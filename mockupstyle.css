@@ -296,6 +296,19 @@ textarea:focus{
     float: left;
 }
 
+.donebutton{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    border: 7px solid;
+    line-height: 47px;
+    color: #9a63b1;
+    border-color: #9a63b1;
+}
+
 #navi {
     border-color: #88827c;
     color: #88827c;
